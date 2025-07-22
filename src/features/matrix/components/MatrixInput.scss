@@ -1,0 +1,74 @@
+@import "../../../styles/variables.scss";
+
+.matrix-input {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: $spacing-xl;
+  background-color: white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-lg;
+
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: $spacing-md;
+  }
+
+  &__description {
+    text-align: center;
+    color: $secondary-color;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xl;
+  }
+
+  &__grid {
+    display: grid;
+    gap: $spacing-sm;
+    justify-content: center;
+    padding: $spacing-lg;
+    background-color: $background-color;
+    border-radius: $border-radius-md;
+    overflow-x: auto;
+  }
+
+  &__cell-wrapper {
+    position: relative;
+  }
+
+  &__cell {
+    .input {
+      margin-bottom: 0;
+    }
+
+    .input__field {
+      text-align: center;
+      width: 80px;
+      padding: $spacing-sm;
+    }
+
+    .input__error {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.65rem;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: $spacing-md;
+    justify-content: center;
+
+    button {
+      min-width: 150px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../styles/variables.scss";
+
+.dimensions-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: $spacing-xl;
+  background-color: white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-lg;
+
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__description {
+    text-align: center;
+    color: $secondary-color;
+    margin-bottom: $spacing-xl;
+    line-height: 1.8;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+}
